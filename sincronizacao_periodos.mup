@@ -1,0 +1,241 @@
+{
+  "title": "sincronização de períodos",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "como encontrar os períodos no asp?",
+      "id": 3,
+      "ideas": {
+        "1": {
+          "title": "os períodos estão associados ao curso_instituicao (série)",
+          "id": 6
+        },
+        "2": {
+          "title": "a tabela curso_periodo associa um curso_instituicao a um ano_exercicio a um período",
+          "id": 7
+        }
+      },
+      "attr": {
+        "style": {},
+        "collapsed": true
+      }
+    },
+    "11": {
+      "title": "como chegar nos períodos a partir da disciplina?",
+      "id": 8,
+      "ideas": {
+        "1": {
+          "title": "ao criar um novo diário, já temos a serie, turma, ano e disciplina",
+          "id": 15
+        },
+        "2": {
+          "title": "para buscar os períodos, basta a série e o ano",
+          "id": 17
+        }
+      },
+      "attr": {
+        "style": {},
+        "collapsed": true
+      }
+    },
+    "16": {
+      "title": "como decidir quais os ano_exercicio que vamos sincronizar?",
+      "id": 26,
+      "ideas": {
+        "1": {
+          "title": "manualmente",
+          "id": 27,
+          "ideas": {
+            "1": {
+              "title": "mostra todos os anos configurados na parametro_instituicao_ensino",
+              "id": 29
+            },
+            "2": {
+              "title": "o usuário seleciona no momento de sicronizar",
+              "id": 30
+            },
+            "3": {
+              "title": "problemas",
+              "id": 31,
+              "ideas": {
+                "1": {
+                  "title": "tem que executar manualmente sempre que for configurado um novo ano",
+                  "id": 32
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#800000"
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "automaticamente",
+          "id": 28,
+          "ideas": {
+            "1": {
+              "title": "opções",
+              "id": 33,
+              "ideas": {
+                "1": {
+                  "title": "seleciona todos os anos que tem boletins abertos",
+                  "id": 34,
+                  "ideas": {
+                    "1": {
+                      "title": "problemas",
+                      "id": 37,
+                      "ideas": {
+                        "1": {
+                          "title": "existem boletins abertos de bastante tempo atrás",
+                          "id": 38
+                        }
+                      },
+                      "attr": {
+                        "style": {
+                          "background": "#800000"
+                        }
+                      }
+                    }
+                  }
+                },
+                "2": {
+                  "title": "seleciona o último ano de cada número de dígitos (ex: 2015 e 20152)",
+                  "id": 35,
+                  "ideas": {
+                    "1": {
+                      "title": "problemas",
+                      "ideas": {
+                        "1": {
+                          "title": "o último pode ser um ano que nem começou ainda (ex: 2016)",
+                          "id": 40
+                        }
+                      },
+                      "id": 39,
+                      "attr": {
+                        "style": {
+                          "background": "#800000"
+                        }
+                      }
+                    }
+                  }
+                },
+                "3": {
+                  "title": "seleciona os dois últimos anos de cada número de dígitos",
+                  "id": 36,
+                  "ideas": {
+                    "1": {
+                      "title": "problemas",
+                      "attr": {
+                        "style": {
+                          "background": "#800000"
+                        }
+                      },
+                      "ideas": {
+                        "1": {
+                          "title": "?",
+                          "id": 43
+                        }
+                      },
+                      "id": 41
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#008080"
+                }
+              }
+            }
+          }
+        }
+      },
+      "attr": {
+        "style": {},
+        "collapsed": true
+      }
+    },
+    "21": {
+      "title": "quais alteraçoes alteração na api são necessárias?",
+      "id": 20,
+      "ideas": {
+        "2": {
+          "title": "opções",
+          "id": 23,
+          "ideas": {
+            "1": {
+              "title": "podemos incluir os periodos nas disciplinas quando fazemos a busca por turmas",
+              "id": 24,
+              "attr": {
+                "style": {}
+              }
+            },
+            "2": {
+              "title": "podemos criar um serviço novo, que retorne os períodos a partir da série e ano_exercício",
+              "id": 25
+            }
+          },
+          "attr": {
+            "style": {
+              "background": "#008080"
+            }
+          }
+        }
+      },
+      "attr": {
+        "collapsed": true,
+        "style": {}
+      }
+    },
+    "31": {
+      "title": "quais alteração no diarion são necessárias?",
+      "id": 48,
+      "ideas": {
+        "1": {
+          "title": "serviço para alteração dos períodos de um diario",
+          "id": 51
+        },
+        "2": {
+          "title": "faz sentido continuar criando o período único nesse caso?",
+          "id": 52
+        }
+      },
+      "attr": {
+        "collapsed": true,
+        "style": {}
+      }
+    },
+    "18.5": {
+      "title": "em que momento vamos importar os períodos?",
+      "id": 45,
+      "ideas": {
+        "1": {
+          "title": "no momento de importar os diários?",
+          "id": 46
+        },
+        "2": {
+          "title": "um passo exclusivo para sincronizar os períodos",
+          "id": 47
+        }
+      },
+      "attr": {
+        "position": [
+          107,
+          192,
+          1
+        ],
+        "style": {},
+        "collapsed": true
+      }
+    }
+  },
+  "links": [],
+  "attr": {
+    "style": {
+      "background": "#339966"
+    }
+  }
+}
